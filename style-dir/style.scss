@@ -1,0 +1,105 @@
+@import "var";
+@import "reset";
+
+header
+{
+    background-color: $white;
+    color: $black;
+    text-align: right;
+    padding: 2rem 3rem;
+}
+
+#head
+{
+    color: $black;
+}
+
+header > h4
+{
+    text-transform: lowercase;
+    font-variant: small-caps;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.image-area > img
+{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 3px solid $black;
+    border-radius: 50%;
+    transform: translateX(-3.5rem) translateY(3rem);
+    padding: .4rem;
+}
+
+main
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main
+{
+    background-color: $baby-web;
+    width: 75.6%;
+    padding: 2rem 3rem;
+}
+
+h3
+{
+    margin: 3rem 0;
+}
+
+.sidebar
+{
+    background-color: $oxford-blue;
+    color: $platinum;
+    width: auto;
+    padding: 1rem 2rem;
+    text-align: right;
+}
+
+body > main > .sidebar > div.about
+{
+    margin-top: 5rem;
+    padding: 1rem 0;
+}
+
+body > main > div.sidebar > h2
+{
+    margin: 3rem 0;
+}
+
+a
+{
+    text-decoration: none;
+    color: $platinum;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    line-height: 36px;
+}
+
+ul
+{
+    list-style: none;   
+}
+
+li
+{
+    line-height: 35px;
+}
+
+#SKILLS
+{
+    text-align: right;
+    column-count: 2;
+}
+
+@media screen and (max-width: 1000px) {
+    .main, .sidebar 
+    {
+        width: 100vw;
+    }
+}
